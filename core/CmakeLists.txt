@@ -1,0 +1,3 @@
+get_filename_component(CORE_ROOT . ABSOLUTE BASE_DIR ${CMAKE_CURRENT_LIST_DIR})
+list(APPEND CMAKE_MODULE_PATH ${CORE_ROOT}/scripts/cmake)
+include(build-engine)

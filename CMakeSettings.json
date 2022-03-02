@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com//fwlink//?linkid=834763 for more information about this file.
+
+    "configurations": [
+        {
+            "name": "Windows [amd64] (Release + PDB)",
+            "generator": "Ninja",
+            "configurationType": "RelWithDebInfo",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "buildRoot": "${projectDir}\\build\\windows-amd64-release",
+            "installRoot": "${projectDir}\\build\\windows-amd64-release\\install",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "-v",
+            "ctestCommandArgs": ""
+        },
+        {
+            "name": "Windows [amd64] (Debug)",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "buildRoot": "${projectDir}\\build\\windows-amd64-debug",
+            "installRoot": "${projectDir}\\build\\windows-amd64-debug\\install",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "-v",
+            "ctestCommandArgs": ""
+        }
+    ]
+}
+
